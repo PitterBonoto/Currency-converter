@@ -15,5 +15,6 @@
 <br>
 
 <img src="https://github.com/PitterBonoto/Project-currency-converter/blob/main/assets/gif-conversor-de-moedas-iphone.gif?raw=true" width=950px>
+<img src="https://github.com/PitterBonoto/Project-currency-converter/blob/main/assets/gif-conversor-de-moedas-iphone.gif?raw=true" width=950px>
 
 
