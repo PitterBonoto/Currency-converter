@@ -113,7 +113,7 @@ section {
 @media screen and (max-width: 830px) {
 
     .image-coin {
-        margin: 25px auto;
+        margin: 60px auto 15px;
         max-width: 90%;
     }
 
