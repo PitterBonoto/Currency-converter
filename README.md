@@ -14,6 +14,6 @@
 <h4>O vídeo abaixo mostra a aplicação sendo executada, fazendo a conversão de diferentes moedas.</h4>
 <br>
 
-<img src="">
+<img src="https://github.com/PitterBonoto/Project-currency-converter/blob/main/assets/gif-conversor-de-moedas-iphone.gif?raw=true" width=950px>
 
 
