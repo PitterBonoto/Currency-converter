@@ -11,7 +11,7 @@
 <br>
 <br>
 
-<h4>O vídeo abaixo mostra a aplicação sendo executada, fazendo a conversão de diferentes moedas.</h4>
+<h5>Os vídeos abaixo mostram a aplicação sendo executada, fazendo a conversão de diferentes moedas, bem como a responsividade do projeto em desktop e mobile.</h5>
 <br>
 
 <img  src="https://github.com/PitterBonoto/Project-currency-converter/blob/main/assets/gif-conversor-de-moedas.gif?raw=true" width=950px dis>
