@@ -7,42 +7,43 @@ const currencySource = document.querySelector(".currency-source")
 
 
 //>>>>>>>>>>>>>>>>> FUNÇÃO DE CONVERSÃO DOS VALORES <<<<<<<<<<<<<<<<<<
-function convertValues() {
+async function convertValues() {
 
     const inputValue = document.querySelector(".input-value").value
     const valueReal = document.querySelector("#value-real")
     const valueConvertedDollar = document.querySelector("#value-converted-dollar")
 
-
+    const data = await fetch("https://economia.awesomeapi.com.br/last/BRL-USD,BRL-EUR,BRL-GBP,BRL-ARS,USD-BRL,USD-EUR,USD-GBP,USD-ARS,EUR-BRL,EUR-USD,EUR-GBP,EUR-ARS,GBP-BRL,GBP-USD,GBP-EUR,ARS-BRL,ARS-USD,ARS-EUR").then(response => response.json())
+    console.log(data)
 
     // Valores para conversão em relação ao REAL
-    const dollarTodayReal = 4.98
-    const euroTodayReal = 5.34
-    const libraTodayReal = 6.23
-    const pesoTodayReal = 0.014
+    const dollarTodayReal = data.USDBRL.bid
+    const euroTodayReal = data.EURBRL.bid
+    const libraTodayReal = data.GBPBRL.bid
+    const pesoTodayReal = data.ARSBRL.bid
 
     // Valores para conversão em relação ao DÓLAR
-    const realTodayDolar = 0.20
-    const euroTodayDolar = 1.07
-    const libraTodayDolar = 1.25
-    const pesoTodayDolar = 0.0029
+    const realTodayDolar = data.BRLUSD.bid
+    const euroTodayDolar = data.EURUSD.bid
+    const libraTodayDolar = data.GBPUSD.bid
+    const pesoTodayDolar = data.ARSUSD.bid
 
     // Valores para conversão em relação ao EURO
-    const realTodayEuro = 0.19
-    const dolarTodayEuro = 0.93
-    const libraTodayEuro = 1.16
-    const pesoTodayEuro = 0.0027
+    const realTodayEuro = data.BRLEUR.bid
+    const dolarTodayEuro = data.USDEUR.bid
+    const libraTodayEuro = data.GBPEUR.bid
+    const pesoTodayEuro = data.ARSEUR.bid
 
     // Valores para conversão em relação ao LIBRA
-    const realTodayLibra = 0.16
-    const dolarTodayLibra = 0.80
-    const euroTodayLibra = 0.86
+    const realTodayLibra = data.BRLGBP.bid
+    const dolarTodayLibra = data.USDGBP.bid
+    const euroTodayLibra = data.EURGBP.bid
     const pesoTodayLibra = 0.0023
 
     // Valores para conversão em relação ao PESO
-    const realTodayPeso = 70.32
-    const dolarTodayPeso = 350.03
-    const euroTodayPeso = 374.81
+    const realTodayPeso = data.BRLARS.bid
+    const dolarTodayPeso = data.USDARS.bid
+    const euroTodayPeso = data.EURARS.bid
     const libraTodayPeso = 436.62
 
 
